@@ -4,11 +4,25 @@ A comprehensive security review skill for Claude Code that provides automated se
 
 ## Installation
 
-Copy `SKILL.md` into your Claude Code skills directory:
+### macOS / Linux
 
 ```bash
 mkdir -p ~/.claude/skills/security-review
 cp SKILL.md ~/.claude/skills/security-review/SKILL.md
+```
+
+### Windows (PowerShell)
+
+```powershell
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude\skills\security-review"
+Copy-Item SKILL.md "$env:USERPROFILE\.claude\skills\security-review\SKILL.md"
+```
+
+### Windows (CMD)
+
+```cmd
+mkdir "%USERPROFILE%\.claude\skills\security-review"
+copy SKILL.md "%USERPROFILE%\.claude\skills\security-review\SKILL.md"
 ```
 
 ## What It Does
